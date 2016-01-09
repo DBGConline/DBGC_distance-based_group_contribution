@@ -9,15 +9,6 @@
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
     <title>DBGC: Distance-Based Group Contribution</title>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    
-      ga('create', 'UA-71969022-1', 'auto');
-      ga('send', 'pageview');
-    </script>
   </head>
 
   <body>
@@ -45,17 +36,38 @@
 <p>Currently only the database is available.
 The source code will be published once a more friendly UI is completed in the future.</p>
 
-<p>The code is divided into three parts.<br>
-1.  QMCalculation is used to assist quantum chemistry calculation, if users want to prediction the thermodynamic properties for some new species. More details can be found in the online "ReadMe.txt" file. If user are familiar with quantum chemistry calculation, this package is not necessary.<br>
-2.  DatabaseGenerator is used to generate the "database.xlsx" and "inputVector.xlsx" file. For training or test set construction, the code will use the Gaussian output files in directories "freq" and "energy". For practical prediction, the code will use the geometry files in directory "Gjfs". More details can be found in the online "ReadMe.txt" file.<br>
-3.  TrainingTestPrediction is used for training, test and practical prediction. More details can be found in the online "ReadMe.txt" file.  </p>
+<p>The code is divided into three parts.
+1.  QMCalculation is used to assist quantum chemistry calculation, if users want to prediction the thermodynamic properties for some new species. More details can be found in the online "ReadMe.txt" file. If user are familiar with quantum chemistry calculation, this package is not necessary.
+2.  DatabaseGenerator is used to generate the "database.xlsx" and "inputVector.xlsx" file. For training or test set construction, the code will use the Gaussian output files in directories "freq" and "energy". For practical prediction, the code will use the geometry files in directory "Gjfs". More details can be found in the online "ReadMe.txt" file.
+3.  TrainingTestPrediction is used for training, test and practical prediction. More details can be found in the online "ReadMe.txt" file.</p>
+
+<p>Some Useful Link:
+Google
+<a href="https://www.google.com/">https://www.google.com/</a>
+keinsci forum
+<a href="http://bbs.keinsci.com/forum.php">http://bbs.keinsci.com/forum.php</a>
+RMG
+<a href="http://rmg.sourceforge.net/">http://rmg.sourceforge.net/</a></p>
+
+<p>Some Important Paper:
+S.W. Benson &amp; J.H. Buss, Additivity Rules for the Estimation of Molecular Properties. Thermodynamic Properties, 1958
+<a href="http://scitation.aip.org/content/aip/journal/jcp/29/3/10.1063/1.1744539">http://scitation.aip.org/content/aip/journal/jcp/29/3/10.1063/1.1744539</a>
+S.W. Benson et al., Additivity rules for the estimation of thermochemical properties, 1969
+<a href="http://pubs.acs.org/doi/abs/10.1021/cr60259a002">http://pubs.acs.org/doi/abs/10.1021/cr60259a002</a>
+S.W. Benson, Thermochemical kinetics, 1976
+<a href="http://onlinelibrary.wiley.com/doi/10.1002/aic.690230437/abstract">http://onlinelibrary.wiley.com/doi/10.1002/aic.690230437/abstract</a>
+<a href="http://onlinelibrary.wiley.com/doi/10.1002/aic.690230437/epdf">http://onlinelibrary.wiley.com/doi/10.1002/aic.690230437/epdf</a>
+E.R. Ritter, J.W. Bozzelli, THERM: Thermodynamic property estimation for gas phase radicals and molecules, 1991
+<a href="http://onlinelibrary.wiley.com/doi/10.1002/kin.550230903/abstract">http://onlinelibrary.wiley.com/doi/10.1002/kin.550230903/abstract</a>
+T.H. Lay, J.W. Bozzelli, A.M. Dean, E.R. Ritter, Hydrogen Atom Bond Increments for Calculation of Thermodynamic Properties of Hydrocarbon Radical Species, 1995
+<a href="http://pubs.acs.org/doi/abs/10.1021/j100039a045">http://pubs.acs.org/doi/abs/10.1021/j100039a045</a></p>
       </section>
     </div>
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">DBGC: Distance-Based Group Contribution maintained by <a href="https://github.com/TanjinHe">Tanjin He</a></p>
+        <p class="copyright">DBGC: Distance-Based Group Contribution maintained by <a href="https://github.com/TanjinHe">TanjinHe</a></p>
         <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
