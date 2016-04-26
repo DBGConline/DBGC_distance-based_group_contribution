@@ -8,24 +8,26 @@ The code is divided into three parts.
 
 Currently this database, which is stored in the directory Database, has  925 alkanes ranging from C3 to C13, 634 alkenes ranging from C3 to C10, 871 alkyl radicals ranging from C3 to C10, and 1458 alkenyl radicals ranging from C3 to C9. More details can be found in the "Database/ReadMe.txt" file.
 
-To use the code, python is needed to run .py files, and MATLAB is needed to run .m files.
-A Python distribution, Anaconda, is recommended. Ref: https://www.continuum.io/downloads.
-Some packages are also needed to run the code, including xlrd, xlwt, xlutils, xlsxwriter, openpyxl.
-Ref:
-xlrd 	https://pypi.python.org/pypi/xlrd.
-xlwt 	https://pypi.python.org/pypi/xlwt.
-xlutils 	https://pypi.python.org/pypi/xlutils.
-xlsxwriter 	https://pypi.python.org/pypi/XlsxWriter.
-openpyxl	https://openpyxl.readthedocs.org/en/default/.
-MATLAB is a commercial software. Ref: http://www.mathworks.com/products/matlab/index.html?s_tid=gn_loc_drop.
+To use the code, python is needed to run .py files, and MATLAB is needed to run .m files.  
+A Python distribution, Anaconda, is recommended. Ref: https://www.continuum.io/downloads.  
+Some packages are also needed to run the code, including xlrd, xlwt, xlutils, xlsxwriter, openpyxl.  
+Ref:  
+xlrd 	https://pypi.python.org/pypi/xlrd.  
+xlwt 	https://pypi.python.org/pypi/xlwt.  
+xlutils 	https://pypi.python.org/pypi/xlutils.  
+xlsxwriter 	https://pypi.python.org/pypi/XlsxWriter.  
+openpyxl	https://openpyxl.readthedocs.org/en/default/.  
+MATLAB is a commercial software. Ref: http://www.mathworks.com/products/matlab/index.html?s_tid=gn_loc_drop.  
 
 Some Useful Link:  
-Google  
-https://www.google.com/
-keinsci forum  
-http://bbs.keinsci.com/forum.php
 RMG - Reaction Mechanism Generator   
 http://rmg.sourceforge.net/  
+NIST Structures and Properties  
+http://webbook.nist.gov/chemistry/grp-add/ga-file.html  
+NIST Chemistry WebBook  
+http://webbook.nist.gov/chemistry/name-ser.html  
+Burcat's Thermodynamic Data  
+http://garfield.chem.elte.hu/Burcat/burcat.html  
  
 Some Important Paper:  
 S.W. Benson & J.H. Buss, Additivity Rules for the Estimation of Molecular Properties. Thermodynamic Properties, 1958  
