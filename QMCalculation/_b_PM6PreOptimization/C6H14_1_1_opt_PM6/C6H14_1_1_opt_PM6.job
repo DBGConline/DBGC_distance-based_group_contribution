@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cd /home/newGroupAdditivityFrog2/CnH2n+2_5/C6H14_1_1_opt_PM6
+g09 C6H14_1_1_opt_PM6.gjf 
+
+

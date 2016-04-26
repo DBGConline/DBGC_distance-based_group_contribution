@@ -1,0 +1,6 @@
+#!/bin/sh
+
+cd /home/newGroupAdditivityFrog2/CnH2n_5/C6H14_2_1_confSearch
+python /home/apps/Frog2/www_iMolecule.py -osmi C6H14_2_1_confSearch.smiles -logFile C6H14_2_1_confSearch.log -ounsolved Unsolved.data -wrkPath . -eini 100.0 -mcsteps 100 -emax 50 -i3Dsdf C6H14_2_1_confSearch.sdf -osdf out_C6H14_2_1_confSearch.sdf -unambiguate -mini -multi 250 &>> log_C6H14_2_1_confSearch.txt
+
+

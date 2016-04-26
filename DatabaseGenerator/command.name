@@ -1,0 +1,7 @@
+//	this is the command file 
+// 	blank line
+check the cbs freq and energy or not? [input: b3lyp / cbs / cbsb3lyp(using the b3lyp energy in cbs calculation) / B3LYP/6-31G(d) / M062X/def2TZVP//B3LYP/6-31G(d)]
+M062X/def2TZVP//B3LYP/6-31G(d)
+
+
+

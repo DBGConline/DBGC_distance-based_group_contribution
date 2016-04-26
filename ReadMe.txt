@@ -1,12 +1,23 @@
-This is the 0th edition for github test.
-
-Currently only the database is available.  
-The source code will be published once a more friendly UI is completed in the future.
-
 The code is divided into three parts.  
-1.	QMCalculation is used to assist quantum chemistry calculation, if users want to prediction the thermodynamic properties for some new species. More details can be found in the online "ReadMe.txt" file. If user are familiar with quantum chemistry calculation, this package is not necessary.  
-2.	DatabaseGenerator is used to generate the "database.xlsx" and "inputVector.xlsx" file. For training or test set construction, the code will use the Gaussian output files in directories "freq" and "energy". For practical prediction, the code will use the geometry files in directory "Gjfs". More details can be found in the online "ReadMe.txt" file.  
-3.	TrainingTestPrediction is used for training, test and practical prediction. More details can be found in the online "ReadMe.txt" file.  
+
+1.	The code in the directory QMCalculation is used to assist quantum chemistry calculation, if users want to prediction the thermodynamic properties for some new species. More details can be found in the "QMCalculation/ReadMe.txt" file. If a user has his own script to help with quantum chemistry calculation, this package is not necessary.
+
+2.	The code in the directory DatabaseGenerator is used to generate the database for training, test and prediction. More details can be found in the "DatabaseGenerator/ReadMe.txt" file.  
+
+3.	The code in the directory TrainingTestPrediction is used for training and testing the network in the group contribution algorithm and for practical prediction. More details can be found in the "rainingTestPrediction/ReadMe.txt" file.  
+
+Currently this database, which is stored in the directory Database, has  925 alkanes ranging from C3 to C13, 634 alkenes ranging from C3 to C10, 871 alkyl radicals ranging from C3 to C10, and 1458 alkenyl radicals ranging from C3 to C9. More details can be found in the "Database/ReadMe.txt" file.
+
+To use the code, python is needed to run .py files, and MATLAB is needed to run .m files.
+A Python distribution, Anaconda, is recommended. Ref: https://www.continuum.io/downloads.
+Some packages are also needed to run the code, including xlrd, xlwt, xlutils, xlsxwriter, openpyxl.
+Ref:
+xlrd 	https://pypi.python.org/pypi/xlrd.
+xlwt 	https://pypi.python.org/pypi/xlwt.
+xlutils 	https://pypi.python.org/pypi/xlutils.
+xlsxwriter 	https://pypi.python.org/pypi/XlsxWriter.
+openpyxl	https://openpyxl.readthedocs.org/en/default/.
+MATLAB is a commercial software. Ref: http://www.mathworks.com/products/matlab/index.html?s_tid=gn_loc_drop.
 
 Some Useful Link:  
 Google  

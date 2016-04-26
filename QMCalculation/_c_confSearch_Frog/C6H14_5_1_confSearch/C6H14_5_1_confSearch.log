@@ -1,0 +1,7 @@
+disambiguation         :  True,  nb max conformations   :    50,  per isomer             : False
+energetic treshold     :  50.0,  bad energy threshold   : 100.0,  stage 2 Monte Carlo    : False
+minimize               :  True
+
+Id 1: C6H14_5
+   3 conformation(s) calculated.
+

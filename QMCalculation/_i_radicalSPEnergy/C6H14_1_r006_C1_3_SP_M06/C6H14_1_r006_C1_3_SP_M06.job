@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cd /WORK/newGroupAdditivityFrog2/banana/validation_g_M06/C6H14_1_r006_C1_3_SP_M06
+g09 C6H14_1_r006_C1_3_SP_M06.gjf 
+
+
