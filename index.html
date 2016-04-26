@@ -20,7 +20,6 @@
 
           <h1 id="project_title">DBGC: Distance-Based Group Contribution</h1>
           <h2 id="project_tagline">This is used to implement distace-based group contribution (DBGC) method</h2>
-          <h3 id="project_keywords">Keywords: group contribution, group additivity</h3>
 
             <section id="downloads">
               <a class="zip_download_link" href="https://github.com/TanjinHe/DBGC_distance-based_group_contribution/zipball/master">Download this project as a .zip file</a>
@@ -32,23 +31,36 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <p>This is the 0th edition for github test.</p>
+        <p>The code is divided into three parts.  </p>
 
-<p>Currently only the database is available.<br>
-The source code will be published once a more friendly UI is completed in the future.</p>
+<ol>
+<li><p>The code in the directory QMCalculation is used to assist quantum chemistry calculation, if users want to prediction the thermodynamic properties for some new species. More details can be found in the "QMCalculation/ReadMe.txt" file. If a user has his own script to help with quantum chemistry calculation, this package is not necessary.</p></li>
+<li><p>The code in the directory DatabaseGenerator is used to generate the database for training, test and prediction. More details can be found in the "DatabaseGenerator/ReadMe.txt" file.  </p></li>
+<li><p>The code in the directory TrainingTestPrediction is used for training and testing the network in the group contribution algorithm and for practical prediction. More details can be found in the "rainingTestPrediction/ReadMe.txt" file.  </p></li>
+</ol>
 
-<p>The code is divided into three parts.<br>
-1.  QMCalculation is used to assist quantum chemistry calculation, if users want to prediction the thermodynamic properties for some new species. More details can be found in the online "ReadMe.txt" file. If user are familiar with quantum chemistry calculation, this package is not necessary.<br>
-2.  DatabaseGenerator is used to generate the "database.xlsx" and "inputVector.xlsx" file. For training or test set construction, the code will use the Gaussian output files in directories "freq" and "energy". For practical prediction, the code will use the geometry files in directory "Gjfs". More details can be found in the online "ReadMe.txt" file.<br>
-3.  TrainingTestPrediction is used for training, test and practical prediction. More details can be found in the online "ReadMe.txt" file.    </p>
+<p>Currently this database, which is stored in the directory Database, has  925 alkanes ranging from C3 to C13, 634 alkenes ranging from C3 to C10, 871 alkyl radicals ranging from C3 to C10, and 1458 alkenyl radicals ranging from C3 to C9. More details can be found in the "Database/ReadMe.txt" file.</p>
+
+<p>To use the code, python is needed to run .py files, and MATLAB is needed to run .m files.<br>
+A Python distribution, Anaconda, is recommended. Ref: <a href="https://www.continuum.io/downloads">https://www.continuum.io/downloads</a>.<br>
+Some packages are also needed to run the code, including xlrd, xlwt, xlutils, xlsxwriter, openpyxl.<br>
+Ref:<br>
+xlrd    <a href="https://pypi.python.org/pypi/xlrd">https://pypi.python.org/pypi/xlrd</a>.<br>
+xlwt    <a href="https://pypi.python.org/pypi/xlwt">https://pypi.python.org/pypi/xlwt</a>.<br>
+xlutils     <a href="https://pypi.python.org/pypi/xlutils">https://pypi.python.org/pypi/xlutils</a>.<br>
+xlsxwriter  <a href="https://pypi.python.org/pypi/XlsxWriter">https://pypi.python.org/pypi/XlsxWriter</a>.<br>
+openpyxl    <a href="https://openpyxl.readthedocs.org/en/default/">https://openpyxl.readthedocs.org/en/default/</a>.<br>
+MATLAB is a commercial software. Ref: <a href="http://www.mathworks.com/products/matlab/index.html?s_tid=gn_loc_drop">http://www.mathworks.com/products/matlab/index.html?s_tid=gn_loc_drop</a>.  </p>
 
 <p>Some Useful Link:<br>
-Google<br>
-<a href="https://www.google.com/">https://www.google.com/</a><br>
-keinsci forum<br>
-<a href="http://bbs.keinsci.com/forum.php">http://bbs.keinsci.com/forum.php</a><br>
 RMG - Reaction Mechanism Generator<br>
-<a href="http://rmg.sourceforge.net/">http://rmg.sourceforge.net/</a>    </p>
+<a href="http://rmg.sourceforge.net/">http://rmg.sourceforge.net/</a><br>
+NIST Structures and Properties<br>
+<a href="http://webbook.nist.gov/chemistry/grp-add/ga-file.html">http://webbook.nist.gov/chemistry/grp-add/ga-file.html</a><br>
+NIST Chemistry WebBook<br>
+<a href="http://webbook.nist.gov/chemistry/name-ser.html">http://webbook.nist.gov/chemistry/name-ser.html</a><br>
+Burcat's Thermodynamic Data<br>
+<a href="http://garfield.chem.elte.hu/Burcat/burcat.html">http://garfield.chem.elte.hu/Burcat/burcat.html</a>  </p>
 
 <p>Some Important Paper:<br>
 S.W. Benson &amp; J.H. Buss, Additivity Rules for the Estimation of Molecular Properties. Thermodynamic Properties, 1958<br>
@@ -61,7 +73,7 @@ S.W. Benson, Thermochemical kinetics, 1976<br>
 E.R. Ritter, J.W. Bozzelli, THERM: Thermodynamic property estimation for gas phase radicals and molecules, 1991<br>
 <a href="http://onlinelibrary.wiley.com/doi/10.1002/kin.550230903/abstract">http://onlinelibrary.wiley.com/doi/10.1002/kin.550230903/abstract</a><br>
 T.H. Lay, J.W. Bozzelli, A.M. Dean, E.R. Ritter, Hydrogen Atom Bond Increments for Calculation of Thermodynamic Properties of Hydrocarbon Radical Species, 1995<br>
-<a href="http://pubs.acs.org/doi/abs/10.1021/j100039a045">http://pubs.acs.org/doi/abs/10.1021/j100039a045</a>    </p>
+<a href="http://pubs.acs.org/doi/abs/10.1021/j100039a045">http://pubs.acs.org/doi/abs/10.1021/j100039a045</a>  </p>
       </section>
     </div>
 
