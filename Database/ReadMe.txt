@@ -32,10 +32,10 @@ SP Energy in folder energy (unit: hartree)
 	This is the SCF energy without ZPE correction at the M062X/def2TZVP level of theory, based on the optimized geometry at B3LYP/6-31G(d) level of theory.
 	
 SP Energy (0 K) in folder energy corrected with freq scaling factor (unit: hartree)	
-	This is the enegy at 0 K at M062X/def2TZVP level of theory, based on the optimized geometry and ZPE correction at the B3LYP/6-31G(d) level of theory. The ZPE scaling factor 0.977 is used here.
+	This is the energy at 0 K at M062X/def2TZVP level of theory, based on the optimized geometry and ZPE correction at the B3LYP/6-31G(d) level of theory. The ZPE scaling factor 0.977 is used here.
 	
 SP Enthalpy (298.15 K) in folder energy with ZPE and enthalpy correction (unit: hartree)	
-	This is the enthalpy at 298.15 K at M062X/def2TZVP level of theory, based on the optimized geometry, ZPE correction and Hf298 - Hf0 at the B3LYP/6-31G(d) level of theory. The ZPE scaling factor 0.977 is used here. The scaling factor used to calculate the enthalpy difference is 1. Because it is usually very close to 1 at 295.15 K. (Ref: A. P. Scott, L. Radom, J. Phys. Chem, 100 (1996) 16502-16513.) Currently only HHRO approximation is used, because the huge cost of hindered rotation correction. 
+	This is the enthalpy at 298.15 K at M062X/def2TZVP level of theory, based on the optimized geometry, ZPE correction and Hf298 - Hf0 at the B3LYP/6-31G(d) level of theory. The ZPE scaling factor 0.977 is used here. The scaling factor used to calculate the enthalpy difference is 1. Because it is usually very close to 1 at 295.15 K. (Ref: A. P. Scott, L. Radom, J. Phys. Chem, 100 (1996) 16502-16513.) Currently only RRHO approximation is used, because the huge cost of hindered rotation correction. 
 	
 Calculated standard formation of enthalpy at M062X/def2TZVP//B3LYP/6-31G(d) level of theory (unit: kcal/mol)	
 	This is the calculated standard enthalpy of formation at the M062X/def2TZVP//B3LYP/6-31G(d) level of theory. During the calculation of the standard enthalpy of formation, a virtual reaction xC(g)+y/2H2(g)+z/2O2(g)=CxHyOx(g) is constructed. 
@@ -50,10 +50,10 @@ Multiplicity (2*S+1)
 	This is the multiplicity of the species, which in defined in the same way Gaussian, namely, 2*S+1.
 	
 Connectivity (.gjf format)	
-	The is connetivity of atoms, which is defined in the same way as Gaussian. Every line consists of the atom label followed with several (label, bond order) pairs.
+	The is connectivity of atoms, which is defined in the same way as Gaussian. Every line consists of the atom label followed with several (label, bond order) pairs.
 	
 Geometry	
-	This is the optimized geometry structure at the B3LYP/6-31G(d) level of theory. However, it should be noted that in pratical predition, a very accurate geometry is not needed. What is needed as input for the distance-based contribution method is the scratch, which is the sketch drawn that specifies the connectivity of atoms. 
+	This is the optimized geometry structure at the B3LYP/6-31G(d) level of theory. However, it should be noted that in practical prediction, a very accurate geometry is not needed. What is needed as input for the distance-based contribution method is the scratch, which is the sketch drawn that specifies the connectivity of atoms. 
 	
 Frequencies	
 	This is frequencies at the B3LYP/6-31G(d) level of theory.
