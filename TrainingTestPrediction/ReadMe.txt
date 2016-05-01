@@ -25,7 +25,7 @@ The code in the directory TrainingTestPrediction is used for training and testin
 group contribution algorithm and for practical prediction. 
 
 Firstly, the file ANN_therm_group_oneHiddenLayer.m is used to train and test the network. Then the 
-trained network will be saved for further prediction. In the pratical prediction, the user can use 
+trained network will be saved for further prediction. In the practical prediction, the user can use 
 DBGCUseTrainedANN.m, the trained network, and the group contribution vector generated through the 
 code in DatabaseGenerator to calculate the standard enthalpy of formation.
 
@@ -46,7 +46,7 @@ ANN_therm_group_oneHiddenLayer.m
 %
 % Tips:
 % The random seed is set for reproducibility. A change of the seed would affect the prediction for every single species, 
-% but the overall statistic behavior will be hold stable. So it is pointness to only care about only very few cases. It 
+% but the overall statistic behavior will be hold stable. So it is pointless to only care about only very few cases. It 
 % is more meaningful to evaluate the method with the statistic result for large amount of species.
 % 
 % Generally, the variable regressionTruncate equals to N, and the dimension of the group contribution vector is 

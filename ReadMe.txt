@@ -6,7 +6,9 @@ The code is divided into three parts.
 
 3.	The code in the directory TrainingTestPrediction is used for training and testing the network in the group contribution algorithm and for practical prediction. More details can be found in the "rainingTestPrediction/ReadMe.txt" file.  
 
-Currently this database, which is stored in the directory Database, has  925 alkanes ranging from C3 to C13, 634 alkenes ranging from C3 to C10, 871 alkyl radicals ranging from C3 to C10, and 1458 alkenyl radicals ranging from C3 to C9. More details can be found in the "Database/ReadMe.txt" file.
+Currently this database "Database/currentDatabase.xlsx", which is stored in the directory Database, has  925 alkanes ranging from C3 to C13, 634 alkenes ranging from C3 to C10, 871 alkyl radicals ranging from C3 to C10, and 1458 alkenyl radicals ranging from C3 to C9. This is the database used for training and test in the distance-based contribution method. More details can be found in the "Database/ReadMe.txt" file. 
+
+The file "Database/conventionalGAGroups.xlsx" is used for the comparison between the distance-based group contribution method and the conventional GA method. The conventional GA groups and corrections are recorded in this file. More details can be found in the "Database/ReadMe.txt" file.    
 
 To use the code, python is needed to run .py files, and MATLAB is needed to run .m files.  
 A Python distribution, Anaconda, is recommended. Ref: https://www.continuum.io/downloads.  
@@ -44,3 +46,4 @@ http://onlinelibrary.wiley.com/doi/10.1002/kin.550230903/abstract
 T.H. Lay, J.W. Bozzelli, A.M. Dean, E.R. Ritter, Hydrogen Atom Bond Increments for Calculation of Thermodynamic Properties of Hydrocarbon Radical Species, 1995  
 http://pubs.acs.org/doi/abs/10.1021/j100039a045  
 
+P.S. Files in the directory dos2unix-6.0.6-win64 is used for text file format conversion (dos to unix).

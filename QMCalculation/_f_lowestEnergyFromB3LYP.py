@@ -32,13 +32,13 @@ the .log files in the sub-directories in _e_conformerB3LYPGjfs and extract the o
 default the standard orientation in the .log file will be used, if the key word like nosym used, 
 the code tmp_m = pattern_standard.match(tmp_line) should replaced with tmp_m = pattern_input.match(tmp_line).
 
-The ouput files will appear in the directory _f_lowestEnergy. Firstly, an energy ranking will be concluded, 
+The output files will appear in the directory _f_lowestEnergy. Firstly, an energy ranking will be concluded, 
 and the conformer with the lowest energy will be used for the final B3LYP optimization and frequencies 
 calculation. For reference, the energy collection is saved as EnergyCollection.xlsx in the directory 
 _e_conformerB3LYPGjfs. In the directory _f_lowestEnergy, every sub-directory named like CnH2n+2_#_2_opt_B3L 
 is an independent computational case. The .job file in the directory CnH2n+2_#_2_opt_B3L is used to control 
 the behavior of the cluster/PC, the .gjf file is the input for the Gaussian program. To control the details 
-of the output scripts, please modify the code in the method genFrogInputFromGjf() in cluter.py file.
+of the output scripts, please modify the code in the method genFrogInputFromGjf() in cluster.py file.
 
 '''
 

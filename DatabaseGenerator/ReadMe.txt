@@ -46,7 +46,7 @@ scf energy of M062X/def2TZVP + ZPE correction of B3LYP/6-31G(d) + enthalpy diffe
 at the B3LYP/6-31G(d) level of theory. The scaling factor used to calculate the ZPE correction is 0.977. 
 (Ref: I.M. Alecu, J. Zheng, Y. Zhao, D.G. Truhlar, J. Chem. Theory Comput. 6 (2010) 2872-2887.) The scaling 
 factor used to calculate the enthalpy difference is 1. Because it is usually very close to 1 at 295.15 K. 
-(Ref: A. P. Scott, L. Radom, J. Phys. Chem, 100 (1996) 16502-16513.) Currently only HHRO approximation is 
+(Ref: A. P. Scott, L. Radom, J. Phys. Chem, 100 (1996) 16502-16513.) Currently only RRHO approximation is 
 used, because the huge cost of hindered rotation correction. 
 
 The input files should be put in the directories freq and energy. The directory freq is used to store the 
@@ -92,21 +92,21 @@ enthalpy of formation can be found in the supplementary .docx file.
 The input file is database.xlsx. It can be generated with getGroupDataBaseFromLog.py, or be obtained based on 
 one's own data source. 
 
-The output file is inputFile.xlsx and inputFile_m.xlsx. In the inputFile.xlsx, the data is arraged with the 
+The output file is inputFile.xlsx and inputFile_m.xlsx. In the inputFile.xlsx, the data is arranged with the 
 order of names of species in the database. In the inputFile_m.xlsx, the species with the same group contribution 
 vectors are combined into the same row. Therefore, all the conformers through internal rotation will be listed 
-in the same row and ranked in the order of energy in inputFile_m.xlsx. This is an adavantage for picking out the 
-lowest-energy conformer. It should be acknowledged that in current stage the cis-tran isomers has the same grouop 
+in the same row and ranked in the order of energy in inputFile_m.xlsx. This is an advantage for picking out the 
+lowest-energy conformer. It should be acknowledged that in current stage the cis-tran isomers has the same group 
 contribution vector, and can't be distinguished. In most of the situations, the tran structure for alkene has a 
-lower energy than cis structure, thus ranking before the cis stucture.
+lower energy than cis structure, thus ranking before the cis structure.
 
 
 -----------------------------
 getGroupDataBaseFromGjf.py
 -----------------------------
-This file is used to generate the group contribution veoctors for the species to be predicted.
+This file is used to generate the group contribution vectors for the species to be predicted.
 
-By default the input file is stored in the directiry Gjfs. The input format is the Gaussian input 
+By default the input file is stored in the directory Gjfs. The input format is the Gaussian input 
 format, namely, .gjf. Here is an example.
 
 	-----------------example below--------------------------------

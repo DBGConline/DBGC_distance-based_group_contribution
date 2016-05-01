@@ -22,14 +22,14 @@
 #---------------------------------------------------------------------------------------------------
 
 '''
-This file is used to extract the optimized geomentry at PM6 level of theory from the .log file. 
+This file is used to extract the optimized geometry at PM6 level of theory from the .log file. 
 
 The input files is the completed case in the directory _b_initialGeomGjf, this .py file will read 
 the .log files in the sub-directories in _b_initialGeomGjf and extract the optimized geometry. The
-.log file is the output of Gaussian compuation. By default the standard orientation in the .log 
+.log file is the output of Gaussian computation. By default the standard orientation in the .log 
 file will be used, if the key word like nosym used, the code tmp_m = pattern_standard.match(tmp_line) 
 should replaced with tmp_m = pattern_input.match(tmp_line).
-The ouput files will appear in the directory _c_confSearch. They are the optimized geometry 
+The output files will appear in the directory _c_confSearch. They are the optimized geometry 
 coordinates in .gjf format.
 '''
 

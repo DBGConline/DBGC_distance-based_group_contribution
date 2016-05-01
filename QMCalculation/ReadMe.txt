@@ -45,23 +45,23 @@ This file is used to generate scripts for PM6 calculation based on the initial g
 
 The input files should be put in the directory _a_initialGeomGjf. The input format is the 
 Gaussian input format, namely, .gjf.
-The ouput files will appear in the directory _b_PM6PreOptimization, every sub-directory 
+The output files will appear in the directory _b_PM6PreOptimization, every sub-directory 
 named like CnH2n+2_#_1_opt_PM6 in _b_PM6PreOptimization is an independent computational case. 
 The .job file in the directory CnH2n+2_#_1_opt_PM6 is used to control the behavior of the cluster/PC, 
 the .gjf file is the input for the Gaussian program. To control the details of the output scripts, please 
-modify the code in the method generateJobFromGjf() in cluter.py file.
+modify the code in the method generateJobFromGjf() in cluster.py file.
 
 -----------------------------
 _b_gjfFromLog.py
 -----------------------------
-This file is used to extract the optimized geomentry at PM6 level of theory from the .log file. 
+This file is used to extract the optimized geometry at PM6 level of theory from the .log file. 
 
 The input files is the completed case in the directory _b_initialGeomGjf. This .py file will read 
 the .log files in the sub-directories in _b_initialGeomGjf and extract the optimized geometry. The
-.log file is the output of Gaussian compuation. By default the standard orientation in the .log 
+.log file is the output of Gaussian computation. By default the standard orientation in the .log 
 file will be used, if the key word like nosym used, the code tmp_m = pattern_standard.match(tmp_line) 
 should be replaced with tmp_m = pattern_input.match(tmp_line).
-The ouput files will appear in the directory _c_confSearch. They are the optimized geometry 
+The output files will appear in the directory _c_confSearch. They are the optimized geometry 
 coordinates in .gjf format.
 
 -----------------------------
@@ -72,11 +72,11 @@ based on the initially optimized structure.
 
 The input files are the .gjf files in the directory _c_confSearch. The .gjf files contains the 
 initially optimized structures.
-The ouput files will appear in the directory _c_confSearch_Frog. Every sub-directory named like 
+The output files will appear in the directory _c_confSearch_Frog. Every sub-directory named like 
 CnH2n+2_#_1_confSearch in _c_confSearch_Frog is an independent computational case. The .job file in 
 the directory CnH2n+2_#_1_confSearch is used to control the behavior of the cluster/PC, the .sdf
 file is the input for the Frog2 program. To control the details of the output scripts, please 
-modify the code in the method genFrogInputFromGjf() in cluter.py file.
+modify the code in the method genFrogInputFromGjf() in cluster.py file.
 
 The Frog program can be download at https://github.com/tuffery/Frog2. 
 Ref papers about Frog2: T.B. Leite et al., Acids Res. 35 (2007) W568-W572, 
@@ -85,7 +85,7 @@ and M.A. Miteva et al., Nucl. Acids Res. 38 (2010) 622-627.
 The OpenBabel program is also used for file format conversion. 
 Info about OpenBabel and downloading: http://openbabel.org/wiki/Main_Page. 
 To change the environment path of OpenBabel, please modify the code in the method
-genFrogInputFromGjf() in cluter.py file.
+genFrogInputFromGjf() in cluster.py file.
 Ref: N M O'Boyle, M Banck, C A James, C Morley, T Vandermeersch, and G R Hutchison. "Open Babel: 
 An open chemical toolbox." J. Cheminf. (2011), 3, 33. DOI:10.1186/1758-2946-3-33
 The Open Babel Package, version 2.3.1 http://openbabel.org
@@ -99,7 +99,7 @@ geometry structures will be extracted and used for PM6 optimization.
 
 The input files are the _minimized.mol2 files in the directory _c_confSearch_Frog. The _minimized.mol2 
 files contains the energy ranking of conformers based on MMFF calculation. 
-The ouput files will appear in the directory _d_conformerPM6Gjfs. Every sub-directory named like 
+The output files will appear in the directory _d_conformerPM6Gjfs. Every sub-directory named like 
 CnH2n+2_#_1_opt_PM6 in _d_conformerPM6Gjfs is an independent computational case. The .job file in the 
 directory CnH2n+2_#_1_opt_PM6 is used to control the behavior of the cluster/PC, the .gjf file is the 
 input for the Gaussian program. To control the number of low-energy conformers to be optimized with PM6, 
@@ -119,7 +119,7 @@ please modify the code in _d_PM6FromConfSearch.py. The related code is as below.
 	tmp_num = len(moles)
 
 To control the details of the output scripts, please modify the code in the method genFrogInputFromGjf() 
-in cluter.py file.
+in cluster.py file.
 
 -----------------------------
 _e_B3YPFromPM6.py
@@ -133,7 +133,7 @@ the .log files in the sub-directories in _d_conformerPM6Gjfs and extract the opt
 default the standard orientation in the .log file will be used, if the key word like nosym used, 
 the code tmp_m = pattern_standard.match(tmp_line) should be replaced with tmp_m = pattern_input.match(tmp_line).
 
-The ouput files will appear in the directory _e_conformerB3LYPGjfs. Firstly, an energy ranking will 
+The output files will appear in the directory _e_conformerB3LYPGjfs. Firstly, an energy ranking will 
 be concluded, and several conformers with relatively low energy will be used for the next B3LYP optimization.
 For reference, the energy collection is saved as EnergyCollection.xlsx in the directory _d_conformerPM6Gjfs.
 In the directory _e_conformerB3LYPGjfs, every sub-directory named like CnH2n+2_#_1_opt_B3L is an independent 
@@ -149,7 +149,7 @@ is as below.
 		continue
 
 To control the details of the output scripts, please modify the code in the method genFrogInputFromGjf() 
-in cluter.py file.
+in cluster.py file.
 
 -----------------------------
 _f_lowestEnergyFromB3LYP.py
@@ -164,13 +164,13 @@ the .log files in the sub-directories in _e_conformerB3LYPGjfs and extract the o
 default the standard orientation in the .log file will be used, if the key word like nosym used, 
 the code tmp_m = pattern_standard.match(tmp_line) should be replaced with tmp_m = pattern_input.match(tmp_line).
 
-The ouput files will appear in the directory _f_lowestEnergy. Firstly, an energy ranking will be concluded, 
+The output files will appear in the directory _f_lowestEnergy. Firstly, an energy ranking will be concluded, 
 and the conformer with the lowest energy will be used for the final B3LYP optimization and frequencies 
 calculation. For reference, the energy collection is saved as EnergyCollection.xlsx in the directory 
 _e_conformerB3LYPGjfs. In the directory _f_lowestEnergy, every sub-directory named like CnH2n+2_#_2_opt_B3L 
 is an independent computational case. The .job file in the directory CnH2n+2_#_2_opt_B3L is used to control 
 the behavior of the cluster/PC, the .gjf file is the input for the Gaussian program. To control the details 
-of the output scripts, please modify the code in the method genFrogInputFromGjf() in cluter.py file.
+of the output scripts, please modify the code in the method genFrogInputFromGjf() in cluster.py file.
 
 -----------------------------
 _g_SPEnergyFromOpt.py
@@ -184,10 +184,10 @@ the .log files in the sub-directories in _f_lowestEnergy and extract the optimiz
 default the standard orientation in the .log file will be used, if the key word like nosym used, 
 the code tmp_m = pattern_standard.match(tmp_line) should be replaced with tmp_m = pattern_input.match(tmp_line).
 
-The ouput files will appear in the directory _g_SPEnergy. Every sub-directory named like CnH2n+2_#_3_SP_M06 
+The output files will appear in the directory _g_SPEnergy. Every sub-directory named like CnH2n+2_#_3_SP_M06 
 is an independent computational case. The .job file in the directory CnH2n+2_#_3_SP_M06 is used to control 
 the behavior of the cluster/PC, the .gjf file is the input for the Gaussian program. To control the details 
-of the output scripts, please modify the code in the method genFrogInputFromGjf() in cluter.py file. For 
+of the output scripts, please modify the code in the method genFrogInputFromGjf() in cluster.py file. For 
 reference, the energy collection is saved as EnergyCollection.xlsx in the directory _f_lowestEnergy.
 
 -----------------------------
@@ -202,11 +202,11 @@ the .log files in the sub-directories in _f_lowestEnergy and extract the optimiz
 default the standard orientation in the .log file will be used, if the key word like nosym used, 
 the code tmp_m = pattern_standard.match(tmp_line) should be replaced with tmp_m = pattern_input.match(tmp_line).
 
-The ouput files will appear in the directory _h_radicalGeneration. Every sub-directory named like 
+The output files will appear in the directory _h_radicalGeneration. Every sub-directory named like 
 CnH2n+2_#_r#_C#_2_opt_B3L is an independent computational case. The .job file in the directory 
 CnH2n+2_#_2_opt_B3L is used to control the behavior of the cluster/PC, the .gjf file is the input for 
 the Gaussian program. To control the details of the output scripts, please modify the code in the method 
-genFrogInputFromGjf() in cluter.py file. For reference, the energy collection of the parent molecules 
+genFrogInputFromGjf() in cluster.py file. For reference, the energy collection of the parent molecules 
 is saved as EnergyCollection.xlsx in the directory _h_radicalGeneration.
 
 -----------------------------
@@ -220,15 +220,15 @@ the .log files in the sub-directories in _h_radicalGeneration and extract the op
 default the standard orientation in the .log file will be used, if the key word like nosym used, 
 the code tmp_m = pattern_standard.match(tmp_line) should be replaced with tmp_m = pattern_input.match(tmp_line).
 
-The ouput files will appear in the directory _h_radicalGeneration. Every sub-directory named like CnH2n+2_#_r#_C#_3_SP_M06 
+The output files will appear in the directory _h_radicalGeneration. Every sub-directory named like CnH2n+2_#_r#_C#_3_SP_M06 
 is an independent computational case. The .job file in the directory CnH2n+2_#_3_SP_M06 is used to control 
 the behavior of the cluster/PC, the .gjf file is the input for the Gaussian program. To control the details 
-of the output scripts, please modify the code in the method genFrogInputFromGjf() in cluter.py file. For 
+of the output scripts, please modify the code in the method genFrogInputFromGjf() in cluster.py file. For 
 reference, the energy collection is saved as EnergyCollection.xlsx in the directory _h_radicalGeneration.
 
 Tips:
 There is an input area at the beginning of every .py script. This is used to control the working directory 
-of the compuation in the cluster/PC.
+of the computation in the cluster/PC.
 
 
 

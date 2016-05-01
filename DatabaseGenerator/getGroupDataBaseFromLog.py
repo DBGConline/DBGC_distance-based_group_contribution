@@ -28,7 +28,7 @@ scf energy of M062X/def2TZVP + ZPE correction of B3LYP/6-31G(d) + enthalpy diffe
 at the B3LYP/6-31G(d) level of theory. The scaling factor used to calculate the ZPE correction is 0.977. 
 (Ref: I.M. Alecu, J. Zheng, Y. Zhao, D.G. Truhlar, J. Chem. Theory Comput. 6 (2010) 2872-2887.) The scaling 
 factor used to calculate the enthalpy difference is 1. Because it is usually very close to 1 at 295.15 K. 
-(Ref: A. P. Scott, L. Radom, J. Phys. Chem, 100 (1996) 16502-16513.) Currently only HHRO approximation is 
+(Ref: A. P. Scott, L. Radom, J. Phys. Chem, 100 (1996) 16502-16513.) Currently only RRHO approximation is 
 used, because the huge cost of hindered rotation correction. 
 
 The input files should be put in the directories freq and energy. The directory freq is used to store the 

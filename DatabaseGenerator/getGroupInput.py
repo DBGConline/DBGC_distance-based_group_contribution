@@ -37,13 +37,13 @@ bringing an effect of error cancellation.
 The input file is database.xlsx. It can be generated with getGroupDataBaseFromLog.py, or be obtained based on 
 one's own data source. 
 
-The output file is inputFile.xlsx and inputFile_m.xlsx. In the inputFile.xlsx, the data is arraged with the 
+The output file is inputFile.xlsx and inputFile_m.xlsx. In the inputFile.xlsx, the data is arranged with the 
 order of names of species in the database. In the inputFile_m.xlsx, the species with the same group contribution 
 vectors are combined into the same row. Therefore, all the conformers through internal rotation will be listed 
-in the same row and ranked in the order of energy in inputFile_m.xlsx. This is an adavantage for picking out the 
-lowest-energy conformer. It should be acknowledged that in current stage the cis-tran isomers has the same grouop 
+in the same row and ranked in the order of energy in inputFile_m.xlsx. This is an advantage for picking out the 
+lowest-energy conformer. It should be acknowledged that in current stage the cis-tran isomers has the same group 
 contribution vector, and can't be distinguished. In most of the situations, the tran structure for alkene has a 
-lower energy than cis structure, thus ranking before the cis stucture.
+lower energy than cis structure, thus ranking before the cis structure.
 
 '''
 

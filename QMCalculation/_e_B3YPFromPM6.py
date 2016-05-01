@@ -31,7 +31,7 @@ the .log files in the sub-directories in _d_conformerPM6Gjfs and extract the opt
 default the standard orientation in the .log file will be used, if the key word like nosym used, 
 the code tmp_m = pattern_standard.match(tmp_line) should replaced with tmp_m = pattern_input.match(tmp_line).
 
-The ouput files will appear in the directory _e_conformerB3LYPGjfs. Firstly, an energy ranking will 
+The output files will appear in the directory _e_conformerB3LYPGjfs. Firstly, an energy ranking will 
 be concluded, and several conformers with relatively low energy will be used for the next B3LYP optimization.
 For reference, the energy collection is saved as EnergyCollection.xlsx in the directory _d_conformerPM6Gjfs.
 In the directory _e_conformerB3LYPGjfs, every sub-directory named like CnH2n+2_#_1_opt_B3L is an independent 
@@ -47,7 +47,7 @@ is as below.
 		continue
 
 To control the details of the output scripts, please modify the code in the method genFrogInputFromGjf() 
-in cluter.py file.
+in cluster.py file.
 
 '''
 

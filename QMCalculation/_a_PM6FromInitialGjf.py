@@ -26,11 +26,11 @@ This file is used to generate scripts for PM6 calculation based on the initial g
 
 The input files should be put in the directory _a_initialGeomGjf, the input format is the 
 Gaussian input format, namely, .gjf.
-The ouput files will appear in the directory _b_PM6PreOptimization, every sub-directory 
+The output files will appear in the directory _b_PM6PreOptimization, every sub-directory 
 named like CnH2n+2_#_1_opt_PM6 in _b_PM6PreOptimization is an independent computational case. 
 The .job file in the directory CnH2n+2_#_1_opt_PM6 is used to control the behavior of the cluster/PC, 
 the .gjf file is the input for the Gaussian program. To control the details of the output scripts, please 
-modify the code in the method generateJobFromGjf() in cluter.py file.
+modify the code in the method generateJobFromGjf() in cluster.py file.
 '''
 
 import re

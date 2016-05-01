@@ -27,11 +27,11 @@ based on the initially optimized structure.
 
 The input files are the .gjf files in the directory _c_confSearch.  The .gjf files contains the 
 initially optimized structures.
-The ouput files will appear in the directory _c_confSearch_Frog, every sub-directory named like 
+The output files will appear in the directory _c_confSearch_Frog, every sub-directory named like 
 CnH2n+2_#_1_confSearch in _c_confSearch_Frog is an independent computational case. The .job file in 
 the directory CnH2n+2_#_1_confSearch is used to control the behavior of the cluster/PC, the .sdf
 file is the input for the Frog2 program. To control the details of the output scripts, please 
-modify the code in the method genFrogInputFromGjf() in cluter.py file.
+modify the code in the method genFrogInputFromGjf() in cluster.py file.
 
 The Frog program can be download at https://github.com/tuffery/Frog2. 
 Ref papers about Frog2: T.B. Leite et al., Acids Res. 35 (2007) W568-W572, 

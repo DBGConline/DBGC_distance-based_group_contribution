@@ -22,9 +22,9 @@
 #---------------------------------------------------------------------------------------------------
 
 '''
-This file is used to generate the group contribution veoctors for the species to be predicted.
+This file is used to generate the group contribution vectors for the species to be predicted.
 
-By default the input file is stored in the directiry Gjfs. The input format is the Gaussian input 
+By default the input file is stored in the directory Gjfs. The input format is the Gaussian input 
 format, namely, .gjf. Here is an example.
 
 	-----------------example below--------------------------------

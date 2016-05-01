@@ -28,7 +28,7 @@ geometry structures will be extracted and used for PM6 optimization.
 
 The input files are the _minimized.mol2 files in the directory _c_confSearch_Frog. The _minimized.mol2 
 files contains the energy ranking of conformers based on MMFF calculation. 
-The ouput files will appear in the directory _d_conformerPM6Gjfs, every sub-directory named like 
+The output files will appear in the directory _d_conformerPM6Gjfs, every sub-directory named like 
 CnH2n+2_#_1_opt_PM6 in _d_conformerPM6Gjfs is an independent computational case. The .job file in the 
 directory CnH2n+2_#_1_opt_PM6 is used to control the behavior of the cluster/PC, the .gjf file is the 
 input for the Gaussian program. To control the number of low-energy conformers to be optimized with PM6, 
@@ -48,7 +48,7 @@ please modify the code in _d_PM6FromConfSearch.py. The related code is as below.
 	tmp_num = len(moles)
 
 To control the details of the output scripts, please modify the code in the method genFrogInputFromGjf() 
-in cluter.py file.
+in cluster.py file.
 
 '''
 

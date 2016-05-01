@@ -1,0 +1,5 @@
+There are two ways to experience the use of the distance-based group contribution method.
+
+1. One way is to visit the website http://DBGC.online. Firstly click the link "Example" to download an example file. This is the coordinate of the molecule at a scratch level, namely, the sketch drawn that specifies the connectivity of atoms. Then click the button "Chooses" to choose one or multiple files for uploading. Then the predicted enthalpy of formation will be displayed. 
+
+2. The other way is to use the MATLAB code in the directory "TrainingTestPrediction". Firstly run "ANN_therm_group_oneHiddenLayer.m" with MATLAB for training and test. The fitted parameters will be save in the directory "TrainingTestPrediction/savedNet". Then run "DBGCUseTrainedANN.m" for prediction on some example cases in the file "TrainingTestPrediction/DBGCVectors/DBGCVectors.xlsx". The file "DBGCVectors.xlsx" consists of the group contribution vectors for the molecules in the directory "DatabaseGenerator/Gjfs". The result will be displayed in the MATLAB Command Window. For more details, please read the file "ReadMe.txt".
