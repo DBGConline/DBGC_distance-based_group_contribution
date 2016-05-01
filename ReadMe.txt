@@ -8,8 +8,6 @@ The code is divided into three parts.
 
 Currently this database "Database/currentDatabase.xlsx", which is stored in the directory Database, has  925 alkanes ranging from C3 to C13, 634 alkenes ranging from C3 to C10, 871 alkyl radicals ranging from C3 to C10, and 1458 alkenyl radicals ranging from C3 to C9. This is the database used for training and test in the distance-based contribution method. More details can be found in the "Database/ReadMe.txt" file. 
 
-The file "Database/conventionalGAGroups.xlsx" is used for the comparison between the distance-based group contribution method and the conventional GA method. The conventional GA groups and corrections are recorded in this file. More details can be found in the "Database/ReadMe.txt" file.    
-
 To use the code, python is needed to run .py files, and MATLAB is needed to run .m files.  
 A Python distribution, Anaconda, is recommended. Ref: https://www.continuum.io/downloads.  
 Some packages are also needed to run the code, including xlrd, xlwt, xlutils, xlsxwriter, openpyxl.  

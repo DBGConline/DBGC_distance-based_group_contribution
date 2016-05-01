@@ -62,39 +62,3 @@ Group contribution vectors
 	This is the group contribution vector generated from the bonding information. This can be done with the code in the directory DatabaseGenerator.
 
 	
-----------------------------------------------------------------
-conventionalGAGroups.xlsx
-----------------------------------------------------------------	
-This is the alkane database used for the comparison between the distance-based contribution method and the conventional GA method. It has 925 alkanes ranging from C3 to C13. The ID in "currentDatabase.xlsx" can help to map a certain alkane to the database "currentDatabase.xlsx".
-The standard enthalpy of formation at M062X/def2TZVP//B3LYP/6-31G(d) level of theory, the optimized structure at B3LYP/6-31G(d) level of theory, the conventional GA groups and corrections, SMILES, formula, and atoms number are recorded in this file.
-
-ID
-	This is the ID for species.
-
-ID in "currentDatabase.xlsx"
-	This is the ID for species in the file "currentDatabase.xlsx".
-
-SMILES
-	This is the SMILES for species.
-
-Formula
-	This is the formula for species.
-
-Atoms Number
-	This is the number of all atoms.
-
-Calculated standard formation of enthalpy at M062X/def2TZVP//B3LYP/6-31G(d) level of theory (unit: kcal/mol)
-	This is the calculated standard enthalpy of formation at the M062X/def2TZVP//B3LYP/6-31G(d) level of theory. During the calculation of the standard enthalpy of formation, a virtual reaction xC(g)+y/2H2(g)+z/2O2(g)=CxHyOx(g) is constructed. 
-	The standard enthalpy of formation of CxHyOx can be calculated with 
-	Hf298(CxHyOz(g))-xHf298(C(g))-y/2Hf298(H2(g))-z/2Hf298(O2(g))=Hf298_DFT(CxHyOz)-xHf298_DFT(C(g))-y/2Hf298_DFT(H2(g))-z/2Hf298_DFT(O2(g)), 
-	namely, 
-	Hf298(CxHyOz(g))=Hf298_DFT(CxHyOz)-xHf298_DFT(C(g))-y/2Hf298_DFT(H2(g))-z/2Hf298_DFT(O2(g))+xHf298(C(g)), 
-	because Hf298(H2(g))=0, and Hf298(O2(g))=0. 
-	The standard enthalpy of formation of C(g) used is not the experimental value, but an average value calculated from 89 aliphatic species at the same level of quantum theory used in the construction of the database, thus bringing an effect of error cancellation. More details about the 89 species and the calculation of standard enthalpy of formation can be found in the supplementary .docx file.
-
-Geometry
-	This is the optimized geometry structure at the B3LYP/6-31G(d) level of theory. However, it should be noted that in pratical predition, a very accurate geometry is not needed. What is needed is the connectivity of atoms, which can be derived from the geometry. 
-
-Group in conventional GA method
-	This is the groups in conventional GA method. The corrections "GAUCHE" and "1-5_interaction" have been taken into consideration. 
-
